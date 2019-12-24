@@ -19,12 +19,17 @@ namespace DSAlgorithm
 
                 for(int i=0; i<size; i++)
                 {
-                    Console.WriteLine(size);
+                   
                     Console.Write("Enter the numweric value to the Stack: ");
                     long c = Convert.ToInt64(Console.ReadLine());
                     stack.push(c);
                     
                  
+                }
+
+                while (!stack.isEmpty())
+                {
+                    Console.Write(stack.pop()+">");
                 }
 
             }

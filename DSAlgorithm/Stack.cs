@@ -27,9 +27,21 @@ namespace DSAlgorithm
 
         public long pop()
         {
-            int old_top = top;
-            top--;
-            return stackArray[top];
+            if (isEmpty())
+            {
+                Console.WriteLine("This is EMPTY");
+                return top;
+                
+            }
+            else
+            {
+                int old_top = top;
+                top--;
+                return stackArray[old_top];
+
+                
+            }
+            
         }
 
         public bool isEmpty()
